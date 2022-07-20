@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+    "outDir": "./dist/",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        //模块采用import语法且不作转换
+        "module": "esnext",
+        //语法编译为es5语法
+        "target": "esnext",
+        // 这样就可以对 `this` 上的数据属性进行更严格的推断
+        "strict": true,
+        //识别基本的系统类库
+        "lib": [
+        "dom",
+        "es5",
+        "es2015"
+    ],
+        "jsx": "preserve",
+        "allowJs": true,
+        //用NPM模式加载
+        "moduleResolution": "node",
+        //对于没有Export的库进行兼容
+        "allowSyntheticDefaultImports": true,
+        //开启修饰器模式
+        "experimentalDecorators": true
+},
+    "include": [
+    "src/**/*"
+],
+    "exclude": [
+    "node_modules"
+]
+}
+
+
